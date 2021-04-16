@@ -12,9 +12,7 @@ module.exports = {
     "@grenoble-hands-on/web-adapters": "<rootDir>/../../adapters/src",
     '^@/(.*)$': '<rootDir>/src/$1'
   },
-  testMatch: [
-    '<rootDir>/(tests/unit/**/*.spec.(js|jsx|ts|tsx))'
-  ],
+  testRegex: "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
   transformIgnorePatterns: ['/node_modules/'],
   snapshotSerializers: ['jest-serializer-vue'],
   testEnvironment: 'jest-environment-jsdom-fifteen',
